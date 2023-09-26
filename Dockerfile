@@ -16,7 +16,7 @@ RUN mkdir -p ~/miniconda3 \
         && ~/miniconda3/bin/conda init zsh 
 
 RUN exec bash \
-		&& git clone https://github.com/OpenBMB/ChatDev.git \
+	&& git clone https://github.com/OpenBMB/ChatDev.git \
         &&conda create -n ChatDev_conda_env python=3.9 -y \
         && conda activate ChatDev_conda_env \
         && cd ChatDev \
