@@ -5,7 +5,7 @@ ARG OPENAI_API_KEY
 #ENV OPENAI_API_KEY="${OPENAI_API_KEY}"
 
 RUN apt update \
-		&& apt install -y wget \
+	&& apt install -y wget \
         && apt install -y git
 
 RUN mkdir -p ~/miniconda3 \
