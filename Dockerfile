@@ -17,7 +17,7 @@ RUN mkdir -p ~/miniconda3 \
 
 RUN exec bash \
 	&& git clone https://github.com/OpenBMB/ChatDev.git \
-        &&conda create -n ChatDev_conda_env python=3.9 -y \
+        && conda create -n ChatDev_conda_env python=3.9 -y \
         && conda activate ChatDev_conda_env \
         && cd ChatDev \
         && pip3 install -r requirements.txt \
